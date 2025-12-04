@@ -9,6 +9,7 @@ The bot saves reminders in a local SQLite database and sends notifications direc
 
 
 ✨ Features
+
 🧠 Natural-language reminder parsing (remind me in 2 hours…)
 
 ⏰ Accurate scheduling using APScheduler
