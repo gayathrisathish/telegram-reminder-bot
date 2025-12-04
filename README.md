@@ -3,8 +3,11 @@ A smart natural-language reminder bot built with Python, APScheduler, and Telegr
 It lets you set reminders like:
 
 remind me in 10 minutes to stretch
+
 remind me tomorrow at 6pm to study
+
 remind me on Monday to call mom
+
 The bot saves reminders in a local SQLite database and sends notifications directly to your Telegram chat.
 
 
