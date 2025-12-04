@@ -33,19 +33,4 @@ The bot saves reminders in a local SQLite database and sends notifications direc
 | pytz                | Timezone support              |
 
 
-🛠️ Setup Instructions
-1️⃣ Clone the repo
-git clone https://github.com/<your-username>/telegram-reminder-bot.git
-cd telegram-reminder-bot
-2️⃣ Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate
-3️⃣ Install dependencies
-pip install -r requirements.txt
-4️⃣ Create a .env file for your bot token
-touch .env
-Inside:
 
-BOT_TOKEN=your-secret-token-here
-5️⃣ Run the bot
-python telegram_bot.py
