@@ -1,40 +1,31 @@
-📌 AI-Powered Telegram Reminder Bot
-A smart natural-language reminder bot built with Python, APScheduler, and Telegram.
-It lets you set reminders like:
+🕒 Telegram Reminder Bot
+A simple, lightweight reminder bot built using Python, APScheduler, and the python-telegram-bot library.
+The bot understands natural-language commands and schedules reminders that are delivered directly to your Telegram chat.
 
-remind me in 10 minutes to stretch
+🚀 Features
+⏰ Create reminders using natural language
+“remind me in 10 minutes to drink water”
+“remind me tomorrow at 7pm to study”
 
-remind me tomorrow at 6pm to study
+🌍 Timezone-aware scheduling (India Standard Time — IST)
+💾 SQLite database stores reminders safely
+🔄 Bot restarts do NOT lose reminders
+🔔 Reliable notifications delivered via Telegram
 
-remind me on Monday to call mom
+🧠 Smart NLP:
+Understands “in X minutes/hours”
 
-The bot saves reminders in a local SQLite database and sends notifications directly to your Telegram chat.
+Understands time + task mixed formats
 
-
-✨ Features
-
-🧠 Natural-language reminder parsing (remind me in 2 hours…)
-
-⏰ Accurate scheduling using APScheduler
-
-💾 SQLite-backed persistent reminders
-
-🔔 Instant Telegram notifications
-
-🕒 Timezone aware (Asia/Kolkata)
-
-🔄 Automatically loads pending reminders on restart
-
-
-📦 Tech Stack
-| Component           | Description                   |
-| ------------------- | ----------------------------- |
-| Python              | Core language                 |
-| APScheduler         | Scheduling reminders          |
-| SQLite              | Database storage              |
-| python-telegram-bot | Telegram integration          |
-| dateparser          | Natural language time parsing |
-| pytz                | Timezone support              |
-
-
-
+🧩 Project Structure
+telegram-reminder-bot/
+│
+├── telegram_bot.py      # Main Telegram bot handler
+├── logic.py             # NLP and reminder parsing
+├── scheduler.py         # APScheduler scheduling + sending reminders
+├── utils.py             # Send-message utilities
+├── db.py                # SQLite database management
+├── requirements.txt     # Python dependencies
+├── test_send.py         # Manual send-message test
+├── test_schedule.py     # Scheduling test script
+└── README.md
