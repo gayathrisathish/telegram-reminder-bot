@@ -5,8 +5,12 @@ import scheduler
 from db import create_table
 
 # ----- BOT TOKEN -----
-from os import getenv
-BOT_TOKEN = getenv("BOT_TOKEN")
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 # ----------------------
 def show_id(update, context):
     chat_id = update.effective_chat.id
