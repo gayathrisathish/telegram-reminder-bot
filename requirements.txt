@@ -1,0 +1,6 @@
+APScheduler==3.11.0
+dateparser==1.2.2
+python-dotenv==1.2.1
+python-telegram-bot[job-queue]==22.5
+pytest==8.3.5
+pytz==2025.2
